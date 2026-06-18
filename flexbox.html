@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            align-items:center; /* use when we have only one line */
+            /* align-content:flex-start; */
+              /* use when we have multiple lines when we will have multiple line? whwn our items are wrap */
+                /* justify-content:center;  */
+            /* There is no justify items in flexbox */
+              flex-wrap: wrap;
+              flex-flow: row wrap;
+              /* gap: 30px; */
+              /* row-gap: 30px;
+              column-gap: 10px; */
+              gap: 30px 10px; /* First value for row and second value for column */
+               /* flex-direction:row-reverse; */
+        }
+        .item{
+           /* flex-grow: 1; */
+           /* By defualt flew grow 0 hai jab ham 1 dety hai tu ess ka mtlb sary items ka width same hai */
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+
+        }
+        .items1{
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            /* mtlb yeh item double speed sai shrink */
+            align-self: flex-start;
+        }
+        .ir
+        .order-1{
+            order:1;
+        }
+          .order-2{
+            order:2;
+        }
+          .order-3{
+            order:3;
+        }
+        .order-77{
+            order:77;
+        }
+        .order-100{
+            order: 100;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-100">1</div> <!-- The items with grearter order will come later -->
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+  
+            <div class="item">5</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          
+            <div class="item order-77">77</div>
+          
+    
+          
+        </div>
+    </main>
+</body>
+</html>

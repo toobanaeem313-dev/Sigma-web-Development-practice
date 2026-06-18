@@ -1,0 +1,78 @@
+body{
+   border: 2px solid black;
+  width: 1300px;
+  height: 1300px;
+  background-color: brown;
+  /* background-image: url(https://images.unsplash.com/photo-1554213808-9c5bab0f624e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3Vuc2V0JTIwb2NlYW58ZW58MHx8MHx8fDA%3D); */
+  object-fit: cover;
+  object-fit: fill;
+}
+.box{
+     border: 2px solid grey;
+  width: 350px;
+  border-radius: 29px;
+   position: relative;
+  top: 100px;
+  left: 400px;  
+  bottom: 200px;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(70, 59, 59, 0.959);
+
+
+} 
+.box button{
+    width: 345px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+     justify-content: center; 
+   
+
+   color: white;
+    background-color:rgb(167, 113, 43);
+   padding-left: 23px;
+   padding-top: 8px;
+    
+}
+.box h2{
+    display: flex;
+    justify-content: center;
+}
+
+.box p{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+.box p a{
+    text-decoration: none;
+    color: white;
+}
+.box label{
+    display: flex;
+    justify-content: center;
+}
+.box input{
+    
+    display: flex;
+    justify-content: center;
+    width: 345px;
+    height: 23px;
+     background-color:rgb(167, 113, 43);
+
+}
+  .box:hover{
+        animation-name: form;
+             animation-duration: 2s;
+             animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+             animation-iteration-count:1;
+            
+             transition: all;
+           
+  }
+@keyframes form {
+    0%{transform: scale(0.5);}
+    
+}
+

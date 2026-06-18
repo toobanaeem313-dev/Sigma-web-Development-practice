@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .layout{
+        display: grid;
+        grid-template-areas: "header header"
+        "aside main"
+        "footer footer";
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+    header{
+        grid-area: header;
+        background-color: orangered;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    header h2{
+        color: white;
+        position: relative;
+        right: 1190px;
+    }
+    header a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+       display: flex;
+       position: relative;
+       left: 500px;
+       top: 25px;
+
+    }
+    aside{
+        grid-area: aside;
+        background-color: rgb(233, 101, 30);
+        width: 180px;
+        height: 580px;
+
+    }
+    aside a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+    }
+    main{
+        grid-area: main;
+    }
+     h3{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        font-weight: 800;
+        
+        
+    }
+    p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        font-weight: bold;
+    }
+     .img-one{
+        border-radius: 10%;
+        width: 400px;
+        position: relative;
+        bottom: 14px;
+     }
+   .img-two{
+        border-radius: 10%;
+        width: 400px;
+        height: 220px;
+        position: relative;
+        left: 90px;
+        bottom: 12px;
+     }
+    
+     .img-three{
+        border-radius: 10%;
+          width: 300px;
+        height: 200px;
+        position: relative;
+        bottom: 12px;
+     }
+       p1{
+        font-weight: bold;
+        position: relative;
+        right: 220px;
+       }
+      .img-fourth{
+        border-radius: 10%;
+          width: 300px;
+        height: 200px;
+        position: relative;
+        right: 110px;
+        bottom: 10px;
+     }
+     p2{
+        font-weight: bold;
+        position: relative;
+        right: 310px;
+        bottom: -2px;
+     }
+       .img-fifth{
+        border-radius: 10%;
+          width: 300px;
+        height: 200px;
+        position: relative;
+        left: 1000px;
+        bottom: 230px;
+     }
+     p3{
+        font-weight: bold;
+        position: relative;
+       left: 800px;
+       bottom: 215px;
+
+     }
+    footer{
+        grid-area: footer;
+        background-color: rgb(69, 66, 66);
+        height: 40px;
+        position: relative;
+        bottom: 230px;
+        text-align: center;
+       
+    }
+</style>
+<body>
+    <div class="layout">
+        <header>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Location</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <h2>BYTE & BITE</h2>
+             
+        </header>
+        <aside>
+            <a href="#">Popular Products</a>
+            <br>
+             <a href="#">Deals</a>
+             <br>
+              <a href="#">Categories</a>
+              <br>
+               <a href="#">Cart</a>
+        </aside>
+        <main>
+            <h3>Welcome to our Restaurant🎉</h3>
+            <p>Discover our foods and specail offers</p>
+             <div class="gallery">
+                <img src="https://www.shutterstock.com/image-photo/burger-special-discount-banner-blank-600nw-2408928973.jpg"   class="img-one" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9qAPZ6CTis2c3LZ7G9uwjFrXgYdm49tvx7g&s" class="img-two" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNc-scqyC3Bh32rDGE2voDOyxrkRkc1q99Qw&s" class="img-three" > 
+                <p1>Burger Price:500 Rs</p1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnoR35fGyUaEjAQ_nZWsxS1S7z1j_oJeJIug&s" class="img-fourth" >
+                <p2>Pizza Price:1000RS</p>
+        
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBv2BdHI86cp5XzB2P1cX0AKedyU_Pq5JqGw&s" class="img-fifth" >
+                <p3>sushi Price:1500RS</p>
+             </div>
+        </main>
+        <footer>&copy; 2026 MyWebsite | All rights reserved</footer>
+    </div>
+</body>
+</html>

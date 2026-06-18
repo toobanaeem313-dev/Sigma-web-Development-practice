@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units</title>
+</head>
+<style>
+    html{
+        font-size: 30px;
+    }  /* Root element */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        border: 2px solid black;
+         /* width: 1920px;  laptop size da de nu monga laptop size mutabiq ba liko  */
+          width: 100vw; 
+          height: 20vh;
+          font-size: 2rem;/* Root element=30px so 2*30=60px of box  */
+         
+         
+        box-sizing: border-box;
+        font-style: italic;
+        background-color: aquamarine;
+    }
+    .container{
+        border: 2px solid purple;
+        background-color: aquamarine;
+         margin: 23px auto;  /* auto bai ye manz ta ki aw 23px bai paki space pa manz ki paida ki */ 
+        width: 45vw;
+        height: 45vh;
+        font-size: 16px; /* parent element  */
+
+    }
+    .container p{
+        font-size: 2em; /* parent element size=16px so 2*16=32px */
+        width: 50%;
+        border: 2px solid red;
+    }
+    .mycont{
+        background-color: red;
+        color: yellow;
+        font-size: 22px;
+        width: 50vmin;
+        height: 80vmax;
+    }
+</style>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente aut recusandae blanditiis. Excepturi quos tempore eius aliquid repellendus sequi commodi voluptas veritatis.
+    </div>
+    <div class="container">
+        <p>
+           Hi i am Tooba .how are you.
+        </p>
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+         
+
+</body>
+</html>

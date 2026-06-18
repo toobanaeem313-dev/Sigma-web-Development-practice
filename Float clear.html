@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display:flow-root;
+        }
+        .cards :nth-child(3){
+            background-color: aqua;
+            clear: right;
+        }
+        img{
+            float: right;
+        }
+        .card{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- .cards>.card*3 da shortcut de -->
+    <div class="cards">
+        <img src="pic.jpg" alt="" width="230">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus animi laudantium reiciendis error temporibus alias, sequi illo consequuntur, enim fugiat fuga eius! Itaque.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maiores incidunt doloremque perferendis aliquam quo excepturi repudiandae, at modi rerum quos necessitatibus et doloribus sunt illo qui veritatis odit debitis beatae porro officia! Qui amet et quidem sed recusandae quas dolorem tempore eaque, aut voluptatum nesciunt, esse magnam distinctio praesentium reiciendis temporibus molestias minus aspernatur repellat impedit, adipisci ex voluptates animi nam! Facere quaerat corrupti id et cumque esse atque rerum tempora. Corporis vero, maiores voluptas recusandae impedit officiis ab maxime fugit iusto eligendi sapiente, eveniet rerum veniam, suscipit porro officia vitae deleniti. Nobis officiis quis hic nulla sapiente? Facilis unde illo eum sunt. Quaerat expedita laboriosam, aspernatur harum molestias velit voluptate sit totam! Placeat, nemo quos nesciunt corrupti aut, laudantium officiis fuga modi voluptatibus rerum at illo eum. Nisi eaque ea tempore. Eum aliquam ipsam at placeat. Ad illum deleniti, sint beatae dicta vel ut quidem natus aut, rem mollitia ipsa nulla accusantium blanditiis dolorum voluptate tempora repellat laborum officia nisi at earum vitae commodi quis! Voluptas sapiente sint aliquam hic esse illo, quidem suscipit excepturi. Iusto ab quos ipsum amet, eveniet omnis veritatis, soluta dolorum aliquid quisquam neque. Molestiae nam quis voluptas animi possimus! Corporis consectetur quis porro dicta ipsa id, quasi nemo quas nostrum distinctio ex rem, quibusdam dignissimos sed, ab a expedita cum dolores accusamus quae placeat sint exercitationem! Nesciunt velit culpa consectetur ex cumque vitae obcaecati repudiandae quam?</div>
+        <div class="card">Card 3</div>
+    </div>
+    </body>
+</html>

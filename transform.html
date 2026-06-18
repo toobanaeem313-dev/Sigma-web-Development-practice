@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+    .box{
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transform: rotate(40deg); */
+        /* transform: rotatez(180deg); */
+        /* transform: scale(1.6); */
+        /* transform: scaleX(1.2); */
+        /* transform: skew(35deg); can apply on x and y axises there is no z-zxis in skew*/
+        /* transform: translate(34px); */
+        transform: rotate(45deg) scale(1.5) skew(40deg) translate(50px,20px);
+
+    }
+    .container{
+        width: 100vw;
+        height: 80vh;
+        border: 2px solid purple;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+        <img src="Untitled.jpg" alt="">
+    </div>
+</body>
+</html>

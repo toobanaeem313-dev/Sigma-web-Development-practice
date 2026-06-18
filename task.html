@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi color website</title>
+    <style>
+        :root{
+            --main-color:blue;
+            --seccolor:purple;
+            --tercolor:red;
+            --qutcolor:brown;
+            --ncolor:dark green;
+        }
+        nav{
+            display: inline;
+            font-size: 25px;
+            background-color: aqua ;
+            font-family: sans-serif;
+         
+            color: var(--main-color);
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+
+        }
+        nav :first-child{
+            color: var(--seccolor);
+            ;
+            
+        }
+          nav :nth-child(2){
+            color: var(--tercolor);
+       
+            
+        }
+          nav :nth-child(3){
+            color: var(--qutcolor);
+           
+            
+        }
+          nav :nth-child(4){
+            color: var(--seccolor);
+           
+            
+        }
+        body{
+            background-color: bisque;
+
+        }
+       
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="#">Products</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="#">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</nav>
+</body>
+</html>
